@@ -13,7 +13,7 @@ class plant : public QGraphicsItem
 public:
     int life;       //生命值
     int state;         //状态
-    int t;      //类型
+    int t;      //具体类型
     enum { Type = UserType + 1};        //类型值
     plant();
     ~plant() override;

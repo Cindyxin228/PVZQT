@@ -19,7 +19,6 @@
         <file>res/FootballZombieAttack.gif</file>
         <file>res/FootballZombieDie.gif</file>
         <file>res/FootballZombieWalk.gif</file>
-        <file>res/Grazy Dave.wav</file>
         <file>res/HeadAttack0.gif</file>
         <file>res/HeadAttack1.gif</file>
         <file>res/HeadWalk0.gif</file>
@@ -82,5 +81,6 @@
         <file>res/TallnutCracked1.gif</file>
         <file>res/TallnutCracked2.gif</file>
         <file>res/basketball.png</file>
+        <file>res/Grazy Dave.wav</file>
     </qresource>
 </RCC>

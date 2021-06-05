@@ -50,7 +50,7 @@ levelScene::levelScene(QWidget *parent) : QMainWindow(parent)
     qsrand(QTime(0,0,0).secsTo(QTime::currentTime()));
 
     //音乐
-    sound = new QSound(":/Grazy Dave.wav");
+    sound = new QSound(":/res/Grazy Dave.wav");
     //循环播放
     sound->setLoops(QSound::Infinite);
     sound->play();
@@ -149,19 +149,19 @@ void levelScene::addZom(){
        time = qrand() % (maxtime / 2) + 1/2 * maxtime;
        int type = qrand() % 100;
        zombie *Zombie = nullptr;
-//       if (type < 40)
-//          Zombie = new norZom;
-//        else if(type < 50)
-//          Zombie = new jokerZom;
-//        else if(type < 60)
-//           Zombie = new rodZom;
-//        else if (type < 70)
-//          Zombie = new paperZom;
-//         else if (type < 80)
-//          Zombie = new bucketZom;
-//        else if (type < 90)
-//          Zombie = new screenZom;
-//        else
+       if (type < 40)
+          Zombie = new norZom;
+        else if(type < 50)
+          Zombie = new jokerZom;
+        else if(type < 60)
+           Zombie = new rodZom;
+        else if (type < 70)
+          Zombie = new paperZom;
+         else if (type < 80)
+          Zombie = new bucketZom;
+        else if (type < 90)
+          Zombie = new screenZom;
+        else
           Zombie = new footballZom;
        int i = qrand() % 5;
        Zombie->setPos(GAME_WIDTH, 130 + 98 * i);
