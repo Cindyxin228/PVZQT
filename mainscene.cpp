@@ -19,7 +19,7 @@ void MainScene::initScene(){
     //设置窗口标题
     this->setWindowTitle(GAME_TITLE);
     this->setWindowIcon(QIcon(":/res/icon.jpg"));
-    m_Timer.setInterval(GAME_RATE);
+    //m_Timer.setInterval(GAME_RATE);
 
     //关卡按钮
     fightButton* startBtn = new fightButton(":/res/fight_1_botton_img.png");
@@ -47,7 +47,6 @@ void MainScene::initScene(){
             chooseLevel->show();
         });
     });
-    //playGame();
 }
 
 void MainScene::paintEvent(QPaintEvent *ev){

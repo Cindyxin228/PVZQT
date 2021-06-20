@@ -56,7 +56,7 @@
 #define hNutLife 3500
 #define garlicLife 25
 
-#define peaPower 20
+#define peaPower 50
 #define cherryPower 1000
 #define potatoPower 1000
 

@@ -16,8 +16,8 @@ class zombie : public QGraphicsItem
 protected:
     int power; // 僵尸攻击力
     int tool;       //工具
-    QMovie *movie;
-    QMovie *head;
+    QMovie *movie;  //身体动画
+    QMovie *head;   //头动画
 public:
     int life; // 剩余生命力
     int state;  //状态

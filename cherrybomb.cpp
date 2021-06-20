@@ -47,5 +47,5 @@ void cherryBomb::advance(int phase){
 //爆炸范围
 bool cherryBomb::collidesWithItem(const QGraphicsItem *other, Qt::ItemSelectionMode mode) const{
     Q_UNUSED(mode)
-        return other->type() == zombie::Type && QLineF(pos(), other->pos()).length() < 150;
+        return other->type() == zombie::Type && QLineF(pos(), other->pos()).length() < 140;
 }
